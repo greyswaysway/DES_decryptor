@@ -38,15 +38,5 @@ public class DES {
 		}
 		
 	}
-	public static byte[] negateIt(byte[] initailArray) {
-		byte[] negationIV = new byte[initailArray.length];
-		for (int i = 0; i < initailArray.length; i++) {
-			int x = (int)initailArray[i];
-			x = -x;
-			x--;
-			negationIV[i] = (byte) x;
-		}
-		return negationIV;
-	}
 
 }
